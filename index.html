@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rudra Morkhade | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Rudra.</div>
+
+        <ul class="nav-links">
+            <li><button data-section="home">Home</button></li>
+            <li><button data-section="about">About</button></li>
+            <li><button data-section="academics">Academics</button></li>
+            <li><button data-section="projects">Projects</button></li>
+            <li><button data-section="certificates">Certificates</button></li>
+            <li><button data-section="contact">Contact</button></li>
+        </ul>
+    </nav>
+
+    <!-- HOME -->
+    <section class="page active" id="home">
+        <div class="hero">
+
+            <div class="hero-text">
+                <h1>Hello, I'm Rudra 👋</h1>
+                <p>
+                    First Year Engineering Student <br>
+                    Developer in Progress
+                </p>
+            </div>
+
+            <div class="hero-image">
+                <img src="./assets/profile-placeholder.png" alt="Rudra profile photo">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="page" id="about">
+        <div class="box">
+            <h2>About Me</h2>
+
+            <p>
+                I'm currently a first-year student at MIT Academy of Engineering, Pune,
+                with a strong interest in technology and building practical systems.
+            </p>
+
+            <p>
+                I enjoy exploring web development, backend systems,
+                APIs, and machine learning.
+            </p>
+
+            <div class="tags">
+                <span>Web Dev</span>
+                <span>Backend</span>
+                <span>Machine Learning</span>
+                <span>GitHub</span>
+                <span>Problem Solving</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACADEMICS -->
+    <section class="page" id="academics">
+        <div class="box">
+            <h2>Academic Details</h2>
+
+            <div class="card-grid">
+
+                <div class="card">
+                    <h3>Current</h3>
+                    <p>B.Tech First Year</p>
+                    <p>MIT Academy of Engineering</p>
+                </div>
+
+                <div class="card">
+                    <h3>10th Boards</h3>
+                    <p>89%</p>
+                </div>
+
+                <div class="card">
+                    <h3>12th Boards</h3>
+                    <p>77%</p>
+                </div>
+
+                <div class="card">
+                    <h3>MHT-CET</h3>
+                    <p>94 Percentile</p>
+                </div>
+
+                <div class="card">
+                    <h3>JEE Mains</h3>
+                    <p>91 Percentile</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="page" id="projects">
+        <div class="box">
+            <h2>Projects</h2>
+
+            <div class="card-grid">
+
+                <div class="card">
+                    <h3>root-chat</h3>
+                    <p>A secure, real-time, terminal-themed chatroom built with Python, FastAPI, and WebSockets.</p>
+                    <a href="https://github.com/FixionWasHere/root-chat">GitHub</a>
+                </div>
+
+                <div class="card">
+                    <h3>Youtilo</h3>
+                    <p>An asynchronous Telegram bot built to download and route media from YouTube and Instagram.</p>
+                    <a href="https://github.com/FixionWasHere/youtilo">GitHub</a>
+                </div>
+
+                <div class="card">
+                    <h3>discord-drive</h3>
+                    <p>A custom, self-hosted cloud storage interface that leverages Discord's infrastructure as a backend file host.</p>
+                    <a href="https://github.com/FixionWasHere/discord-drive">GitHub</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section class="page" id="certificates">
+        <div class="box">
+            <h2>Certificates</h2>
+
+            <div class="card-grid">
+
+                <a class="certificate" href="assets/cert1.jpg">Python Essentials 1</a>
+                <a class="certificate" href="assets/cert2.jpg">Python Essentials 2</a>
+                <a class="certificate" href="assets/cert3.png">Anthropic Cert 1</a>
+                <a class="certificate" href="assets/cert4.png">Anthropic Cert 2</a>
+                <a class="certificate" href="assets/cert5.png">Antropic Cert 3</a>
+                <a class="certificate" href="assets/cert6.png">Anthropic Cert 4</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="page" id="contact">
+        <div class="box">
+            <h2>Contact</h2>
+
+            <form>
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+:root {
+    --yellow: #ffd500;
+    --pink: #ff4d8d;
+    --blue: #00c2ff;
+    --green: #90ff70;
+    --black: #000;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--yellow);
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--white);
+    border-bottom: 4px solid var(--black);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 30px;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.nav-links button {
+    background: var(--pink);
+    border: 3px solid var(--black);
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+
+    box-shadow: 5px 5px 0px var(--black);
+    transition: 0.2s;
+}
+
+.nav-links button:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 0px var(--black);
+}
+
+/* PAGES */
+
+.page {
+    min-height: 100vh;
+    display: none;
+    padding: 120px 8%;
+}
+
+.page.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HERO */
+
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hero-image img {
+    width: 300px;
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border: 5px solid black;
+    box-shadow: 10px 10px 0px black;
+}
+
+/* BOX */
+
+.box {
+    width: 100%;
+    background: var(--white);
+    border: 5px solid var(--black);
+    padding: 40px;
+
+    box-shadow: 12px 12px 0px var(--black);
+}
+
+.box h2 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+/* CARDS */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: var(--blue);
+    border: 4px solid black;
+    padding: 20px;
+
+    box-shadow: 8px 8px 0px black;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+/* TAGS */
+
+.tags {
+    margin-top: 25px;
+}
+
+.tags span {
+    display: inline-block;
+    background: var(--green);
+    border: 3px solid black;
+
+    padding: 10px 15px;
+    margin: 8px;
+
+    font-weight: bold;
+}
+
+/* CERTIFICATES */
+
+.certificate {
+    text-decoration: none;
+    color: black;
+    background: var(--pink);
+    border: 4px solid black;
+
+    padding: 20px;
+    font-weight: bold;
+
+    box-shadow: 6px 6px 0px black;
+}
+
+/* FORM */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input,
+textarea {
+    padding: 15px;
+    border: 3px solid black;
+    font-size: 1rem;
+}
+
+button {
+    padding: 15px;
+    border: 3px solid black;
+    background: var(--green);
+    font-weight: bold;
+    cursor: pointer;
+
+    box-shadow: 5px 5px 0px black;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-image img {
+        width: 220px;
+    }
+
+    .box h2 {
+        font-size: 2rem;
+    }
+}
